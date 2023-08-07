@@ -2,7 +2,7 @@ from django.db import models
 
 class Curso(models.Model):
     nombre = models.CharField(max_length=64)
-    comision = models.ImageField()
+    comision = models.IntegerField()
 
 class Estudiante(models.Model):
     apellido = models.CharField(max_length=256)
